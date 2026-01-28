@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mpu Gandring Studio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .h-10 {
+              height: 8.5rem;
+            }
+        .text-\[\#6d4c41\] {
+              color: rgb(187, 121, 121);
+            }
+        .text-\[\#4e342e\] {
+              color: rgb(174, 68, 44);
+            }
+    </style>
+</head>
+<body class="bg-[#f5efe6] text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-[#3e2723] shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center text-2xl font-bold text-[#6d4c41]"><img src="logo.png" alt="TestttMpu Gandring Studio" class="h-10 w-auto mr-2">Mpu Gandring <span class="text-[#4e342e]">Studio</span></a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-[#f5efe6] hover:text-[#ffcc80] transition">Beranda</a>
+                    <a href="#services" class="text-[#f5efe6] hover:text-[#ffcc80] transition">Layanan</a>
+                    <a href="#why-us" class="text-[#f5efe6] hover:text-[#ffcc80] transition">Keunggulan</a>
+                    <a href="#contact" class="bg-[#6d4c41] text-[#f5efe6] px-4 py-2 rounded-md hover:bg-[#5d4037] transition">Hubungi Kami</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-[#f5efe6] hover:text-[#ffcc80] focus:outline-none">
+    <i class="fas fa-bars text-2xl"></i>
+</button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#3e2723] border-t border-[#5d4037]">
+    <a href="#home" class="block px-4 py-2 text-[#f5efe6] hover:bg-[#5d4037]">Beranda</a>
+    <a href="#services" class="block px-4 py-2 text-[#f5efe6] hover:bg-[#5d4037]">Layanan</a>
+    <a href="#why-us" class="block px-4 py-2 text-[#f5efe6] hover:bg-[#5d4037]">Keunggulan</a>
+    <a href="#contact" class="block px-4 py-2 text-[#ffcc80] font-semibold hover:bg-[#5d4037]">Hubungi Kami</a>
+</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-3xl text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Solusi IT Lengkap untuk Bisnis & Personal</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-200">Jasa perbaikan komputer profesional dan pembuatan aplikasi modern untuk meningkatkan produktivitas Anda.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-[#6d4c41] hover:bg-[#5d4037] text-white px-8 py-3 rounded-full font-semibold transition text-lg">
+                    Konsultasi Gratis
+                </a>
+                <a href="#services" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white px-8 py-3 rounded-full font-semibold transition text-lg">
+                    Lihat Layanan
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Layanan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan dua fokus utama layanan untuk memenuhi kebutuhan teknologi hardware dan software Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Service 1: Hardware -->
+                <div class="bg-[#f5efe6] p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-100 text-[#6d4c41] rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Service Komputer & Laptop</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Instalasi Ulang Windows/MacOS & Software</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Perbaikan Hardware (Mati Total, Layar Pecah)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Upgrade SSD & RAM</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Pembersihan Virus & Maintenance</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20service%20laptop" class="text-[#6d4c41] font-semibold hover:text-blue-800 flex items-center">
+                        Booking Service <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2: Software/App -->
+                <div class="bg-[#f5efe6] p-8 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Pembuatan Aplikasi & Website</h3>
+                    <ul class="space-y-3 text-gray-600 mb-6">
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Website Company Profile & Landing Page</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Aplikasi Kasir (POS) untuk UMKM</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Sistem Informasi Manajemen</li>
+                        <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Pembuatan Toko Online</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20buat%20aplikasi" class="text-purple-600 font-semibold hover:text-purple-800 flex items-center">
+                        Konsultasi Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="py-20 bg-[#3e2723] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Mengapa Memilih Kami?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <i class="fas fa-bolt text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Pengerjaan Cepat</h3>
+                    <p class="text-gray-400">Kami menghargai waktu Anda. Estimasi pengerjaan transparan dan tepat waktu.</p>
+                </div>
+                <div class="p-6">
+                    <i class="fas fa-shield-alt text-4xl text-green-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Bergaransi</h3>
+                    <p class="text-gray-400">Setiap perbaikan hardware dan pembuatan aplikasi kami lengkapi dengan garansi resmi.</p>
+                </div>
+                <div class="p-6">
+                    <i class="fas fa-hand-holding-dollar text-4xl text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Harga Terjangkau</h3>
+                    <p class="text-gray-400">Solusi teknologi berkualitas dengan harga yang bersahabat untuk UMKM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Hubungi Kami</h2>
+                    <p class="text-gray-600 mb-8">Punya masalah dengan laptop atau butuh aplikasi untuk bisnis? Jangan ragu untuk berkonsultasi dengan kami.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 mr-4">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">WhatsApp</p>
+                                <p class="font-semibold">+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-[#6d4c41] mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Lokasi</p>
+                                <p class="font-semibold">Jl. Teknologi No. 123, Jakarta Selatan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-red-600 mr-4">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Email</p>
+                                <p class="font-semibold">info@techfixdev.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Simple Form -->
+                <div class="bg-[#f5efe6] p-8 rounded-xl shadow-lg">
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">Nama Lengkap</label>
+                            <input type="text" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Nama Anda">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">Layanan yang Dibutuhkan</label>
+                            <select class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Service Komputer/Laptop</option>
+                                <option>Pembuatan Aplikasi/Web</option>
+                                <option>Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-bold mb-2">Pesan</label>
+                            <textarea class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Ceritakan kebutuhan Anda..."></textarea>
+                        </div>
+                        <button type="button" class="w-full bg-[#6d4c41] text-white font-bold py-3 rounded-lg hover:bg-[#5d4037] transition">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2023 Mpu Gandring Studio. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook text-xl"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for Mobile Menu -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
